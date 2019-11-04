@@ -1,4 +1,5 @@
 import subprocess
+from xml.dom.minidom import parse, parseString
 
 class InitIsGenerator(object):
     def __init__(self, i):
@@ -18,3 +19,8 @@ def lookup_with_default_key(mapping, key=None):
         key = [] # Should be key = ()
     return mapping[key]
     
+def transcode_file(request, filename):
+    command = 'ffmpeg -i "{source}" output_file.mpg'.format(source=filename)
+    subprocess.call(command, shell=True)
+
+dom1 = parse('c:\\temp\\mydata.xml')
