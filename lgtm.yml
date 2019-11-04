@@ -1,0 +1,4 @@
+extraction:
+   cpp:
+     index:
+       buildless: true
