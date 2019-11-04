@@ -24,3 +24,5 @@ def transcode_file(request, filename):
     subprocess.call(command, shell=True)
 
 dom1 = parse('c:\\temp\\mydata.xml')
+
+print("Hello World")
