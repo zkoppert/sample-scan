@@ -26,3 +26,4 @@ def transcode_file(request, filename):
 dom1 = parse('c:\\temp\\mydata.xml')
 
 print("Hello World")
+print("Hello World")
